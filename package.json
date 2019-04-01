@@ -1,0 +1,19 @@
+{
+  "name": "dayone",
+  "version": "1.0.0",
+  "description": "Dayone web page",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "rimraf public && hugo --minify && gh-pages -d public"
+  },
+  "author": "Paiboon Auengkongkatong",
+  "license": "ISC",
+  "homepage": "https://paiboon15721.github.io/dayone",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3"
+  }
+}
