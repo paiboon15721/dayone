@@ -1,7 +1,10 @@
 {{ define "content" }}
+<div class="header text-center">
+  <h1 class="display-4">ระบบที่จะช่วยให้ปัญหาหมดไป</h1>
+  <p class="lead">ฟรีตลอดไป! ไม่ต้องใช้บัตรเครดิต</p>
+</div>
 <div class="container">
   <hr class="featurette-divider" />
-
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">
@@ -15,20 +18,7 @@
       </p>
     </div>
     <div class="col-md-5">
-      <svg
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-        width="500"
-        height="500"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid slice"
-        focusable="false"
-        role="img"
-        aria-label="Placeholder: 500x500"
-      >
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#eee" />
-        <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-      </svg>
+      <img class="img-fluid" src="https://via.placeholder.com/400" alt="" />
     </div>
   </div>
 
@@ -47,20 +37,7 @@
       </p>
     </div>
     <div class="col-md-5 order-md-1">
-      <svg
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-        width="500"
-        height="500"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid slice"
-        focusable="false"
-        role="img"
-        aria-label="Placeholder: 500x500"
-      >
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#eee" />
-        <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-      </svg>
+      <img class="img-fluid" src="https://via.placeholder.com/400" alt="" />
     </div>
   </div>
 
@@ -78,23 +55,19 @@
       </p>
     </div>
     <div class="col-md-5">
-      <svg
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-        width="500"
-        height="500"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid slice"
-        focusable="false"
-        role="img"
-        aria-label="Placeholder: 500x500"
-      >
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#eee" />
-        <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-      </svg>
+      <img class="img-fluid" src="https://via.placeholder.com/400" alt="" />
     </div>
   </div>
 
   <hr class="featurette-divider" />
+</div>
+<div class="learn-more text-center">
+  <h3>ไม่ต้องลงทุนเงินก้อน สามารถใช้งานได้ทันที</h3>
+  <a
+    class="btn btn-secondary btn-lg px-5 mt-3"
+    href="{{ `/pricing/` | relURL }}"
+    role="button"
+    >ดูข้อเสนอเพิ่มเติม</a
+  >
 </div>
 {{ end }}

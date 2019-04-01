@@ -1,6 +1,6 @@
 {{ define "content" }}
-<div class="my-5 pb-md-4 text-center">
-  <h1 class="display-4">ราคาสุดประหยัด !</h1>
+<div class="header text-center">
+  <h1 class="display-4">โปรโมชั่นพิเศษ !</h1>
   <p class="lead">ฟรีตลอดไป! ไม่ต้องใช้บัตรเครดิต</p>
 </div>
 <div class="container">
@@ -50,5 +50,14 @@
       </div>
     </div>
   </div>
+</div>
+<div class="learn-more text-center mt-5">
+  <h3>หากคุณมีข้อสงสัย เรายินดีให้คำปรึกษา</h3>
+  <a
+    class="btn btn-secondary btn-lg px-5 mt-3"
+    href="{{ `/contact-us/` | relURL }}"
+    role="button"
+    >ติดต่อเรา</a
+  >
 </div>
 {{ end }}
