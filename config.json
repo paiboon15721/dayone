@@ -1,5 +1,12 @@
 {
   "baseURL": "http://example.org/",
   "languageCode": "en-us",
-  "title": "Dayone"
+  "title": "Dayone",
+  "params": {
+    "contact": {
+      "phone": "0 2881 3800",
+      "email": "info@clusterkit.co.th",
+      "address": "91 ซ.ริมคลองชักพระ<br />ถนนบางขุนนนท์ แขวงบางขุนนนท์<br />เขตบางกอกน้อย กทม.10700"
+    }
+  }
 }

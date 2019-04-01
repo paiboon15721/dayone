@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Dayone</a>
+    <a class="navbar-brand" href="{{ `/` | relURL }}">Dayone</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,19 +15,17 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">ผลิตภัณฑ์</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ราคา</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ติดต่อเรา</a>
-        </li>
+        {{ $currentPage := . }}
+        {{ range.Site.Menus.main }}
+          <li class="nav-item{{ if $currentPage.IsMenuCurrent `main` . }} active{{ end }}">
+            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
       </ul>
-      <a href="callto:028813800">
+      <a href="callto:{{ replace .Site.Params.contact.phone ` ` `` }}">
         <span class="navbar-text">
-          <i class="fas fa-phone mr-2"></i>0 2881 3800
+          <i class="fas fa-phone mr-2"></i>
+          {{ .Site.Params.contact.phone }}
         </span>
       </a>
     </div>
