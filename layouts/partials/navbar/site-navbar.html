@@ -17,9 +17,11 @@
       <ul class="navbar-nav mr-auto">
         {{ $currentPage := . }}
         {{ range.Site.Menus.main }}
-          <li class="nav-item{{ if $currentPage.IsMenuCurrent `main` . }} active{{ end }}">
-            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-          </li>
+        <li
+          class="nav-item{{ if $currentPage.IsMenuCurrent `main` . }} active{{ end }}"
+        >
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
         {{ end }}
       </ul>
       <a href="callto:{{ replace .Site.Params.contact.phone ` ` `` }}">
@@ -28,7 +30,12 @@
           {{ .Site.Params.contact.phone }}
         </span>
       </a>
-      <a href="#" class="btn btn-primary btn-sm ml-4 px-4">ใช้งานฟรี</a>
+      <a
+        target="_bank"
+        href="{{ .Site.Params.appURL }}"
+        class="btn btn-primary btn-sm ml-4 px-4"
+        >ใช้งานฟรี</a
+      >
     </div>
   </div>
 </nav>
