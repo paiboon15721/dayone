@@ -13,11 +13,7 @@
   </head>
   <body>
     {{ partial "navbar/site-navbar.html" . }}
-    <main
-      data-toggle="collapse"
-      data-target="#navbarsExampleDefault"
-      role="main"
-    >
+    <main role="main" >
       {{ block "content" . }}
       {{ end }}
     </main>

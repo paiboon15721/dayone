@@ -1,7 +1,7 @@
 {{ define "content" }}
 <div class="header text-center">
   <h1 class="display-4">ระบบที่จะช่วยให้ปัญหาหมดไป</h1>
-  <p class="lead">ฟรีตลอดไป! ไม่ต้องใช้บัตรเครดิต</p>
+  <p class="lead">บอกลากับปัญหาเดิมๆ ด้วยวิธีการใหม่</p>
 </div>
 <div class="container">
   <hr class="featurette-divider" />
@@ -62,12 +62,14 @@
   <hr class="featurette-divider" />
 </div>
 <div class="learn-more text-center">
-  <h3>ไม่ต้องลงทุนเงินก้อน สามารถใช้งานได้ทันที</h3>
-  <a
-    class="btn btn-secondary btn-lg px-5 mt-3"
-    href="{{ `/pricing/` | relURL }}"
-    role="button"
-    >ดูข้อเสนอเพิ่มเติม</a
-  >
+  <div class="container">
+    <h3>ไม่ต้องลงทุนเงินก้อน สามารถใช้งานได้ทันที</h3>
+    <a
+      class="btn btn-secondary btn-lg px-5 mt-3"
+      href="{{ `/pricing/` | relURL }}"
+      role="button"
+      >ดูข้อเสนอเพิ่มเติม</a
+    >
+  </div>
 </div>
 {{ end }}
