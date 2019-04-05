@@ -4,4 +4,9 @@
 
 .featurette {
   align-items: center;
+  .img-container {
+    @include media-breakpoint-down(sm) {
+      margin-top: 2rem;
+    }
+  }
 }
